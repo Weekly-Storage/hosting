@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>주간 스위프트 — iOS 개발자를 위한 뉴스 & 인사이트</title>
+  <meta name="description" content="당신의 iOS & Swift 개발 여정을 밝혀줄 단 하나의 앱! 최신 뉴스, 기술 블로그, 고품질 튜토리얼을 한눈에.">
+  <meta property="og:title" content="주간 스위프트">
+  <meta property="og:description" content="빠르게 변화하는 iOS 생태계 속, 가장 먼저 알아야 할 정보만을 전합니다.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/MintSwift/MintImage/main/assets/202312_Update/WeeklySwift_Banner_3.0.jpeg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1c1c1e;
+      --muted: #6a737d;
+      --border: #e1e4e8;
+      --accent: #007aff;
+      --code-bg: #f6f8fa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c0c0d;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --border: #2c2c2e;
+        --code-bg: #1f1f1f;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 960px;
+      margin: 40px auto 20px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    p.lead {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #005fcc;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>주간 스위프트</h1>
+    <p class="lead">iOS & Swift 개발자를 위한 최신 뉴스, 기술 블로그, 튜토리얼</p>
+    <a href="https://apps.apple.com/app/id1661868347" target="_blank" rel="noopener">
+      <img src="https://raw.githubusercontent.com/MintSwift/MintImage/main/assets/202312_Update/WeeklySwift_Banner_3.0.jpeg" alt="주간 스위프트 배너">
+    </a>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>앱 소개</h2>
+      <p>당신의 iOS & Swift 개발 여정을 밝혀줄 단 하나의 앱! 빠르게 변화하는 iOS 생태계 속, 가장 먼저 알아야 할 정보만을 선별해 전합니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>주요 기능</h2>
+      <ul>
+        <li><strong>최신 콘텐츠</strong> — 1~3일마다 업데이트되는 뉴스, 블로그, 튜토리얼</li>
+        <li><strong>즐겨찾기</strong> — 중요한 아티클을 저장하고 다시 확인</li>
+        <li><strong>컨퍼런스 일정</strong> — 글로벌 iOS & Swift 행사 타임라인</li>
+        <li><strong>홈 화면 위젯</strong> — 앱을 열지 않아도 최신 콘텐츠 확인</li>
+        <li><strong>사용자 맞춤 기능</strong> — 다크모드, 문의하기, 공유 기능 등</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>프리미엄 기능</h2>
+      <ul>
+        <li>뉴스 실시간 제공 및 번역 타이틀 지원</li>
+        <li>인기 아티클 정렬 및 무제한 즐겨찾기</li>
+        <li>푸시 알림 이력 보기로 중요한 소식 확인</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>스크린샷</h2>
+      <div class="grid">
+        <img src="https://raw.githubusercontent.com/Weekly-Storage/Weekly-Image/refs/heads/main/Main_Banner/iPhone_Slide_3.jpg" alt="스크린샷 1">
+        <img src="https://raw.githubusercontent.com/Weekly-Storage/Weekly-Image/refs/heads/main/Main_Banner/iPhone_Slide_4.jpg" alt="스크린샷 2">
+        <img src="https://raw.githubusercontent.com/Weekly-Storage/Weekly-Image/refs/heads/main/Main_Banner/iPhone_Slide_8.jpg" alt="스크린샷 3">
+        <img src="https://raw.githubusercontent.com/Weekly-Storage/Weekly-Image/refs/heads/main/Main_Banner/iPhone_Slide_6.jpg" alt="스크린샷 4">
+        <img src="https://raw.githubusercontent.com/Weekly-Storage/Weekly-Image/refs/heads/main/Main_Banner/iPhone_Slide_7.jpg" alt="스크린샷 5">
+        <img src="https://raw.githubusercontent.com/Weekly-Storage/Weekly-Image/refs/heads/main/Main_Banner/iPhone_Slide_1.jpg" alt="스크린샷 6">
+      </div>
+    </section>
+
+    <section class="section cta">
+      <a class="btn" href="https://apps.apple.com/app/id1661868347" target="_blank">App Store에서 다운로드</a>
+      <p style="margin-top:10px;color:var(--muted)">* 2026년 4월 이후 최소 지원 버전은 iOS 16 이상입니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 주간 스위프트 — 모든 권리 보유</p>
+    <p>
+      <a href="mailto:coolmint.developer@gmail.com">이메일</a> ·
+      <a href="https://github.com/MintSwift" target="_blank">GitHub</a> ·
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVhFx4CG6oL0cK0pvo3HeDY24q38NHpJBBq-PO3xKve2FQFg/viewform" target="_blank">문의하기</a>
+    </p>
+    <p>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">이용약관 (EULA)</a> ·
+      <a href="https://github.com/MintSwift/weekly-swift/blob/main/Privacy-Policy.md" target="_blank">개인정보 처리방침</a>
+    </p>
+  </footer>
+</body>
+</html>
